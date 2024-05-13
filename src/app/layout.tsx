@@ -31,7 +31,7 @@ export default function RootLayout({
       className={`antialiased ${jersey.variable} ${roboto.variable}`}
     >
       <body className="font-roboto">
-        <div className="flex flex-col items-start justify-center bg-zinc-950 min-h-screen">
+        <div className="flex flex-col items-start justify-center bg-zinc-950 min-h-screen text-white">
           <Header />
           {children}
         </div>

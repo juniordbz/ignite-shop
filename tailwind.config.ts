@@ -7,11 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily:{
-      roboto:[ 'var(--roboto)', 'sans serif'],
-      jersey:[ 'var(--jersey)', 'sans serif'],
+    extend:{
+      fontFamily:{
+        roboto:[ 'var(--roboto)', 'sans serif'],
+        jersey:[ 'var(--jersey)', 'sans serif'],
+      },
+      maxWidth:{
+        home:'calc(100vw - ((100vw - 1180px) /2))'
+      }
     },
-
   },
   plugins: [],
 };
