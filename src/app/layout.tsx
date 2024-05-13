@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Jersey_25 } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/Header";
 
 const jersey = Jersey_25({
   weight: ["400"],
@@ -25,8 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jersey.variable} ${roboto.variable}`}>
-      <body className="font-roboto">{children}</body>
+    <html
+      lang="en"
+      className={`antialiased ${jersey.variable} ${roboto.variable}`}
+    >
+      <body className="font-roboto">
+        <div className="flex flex-col items-start justify-center bg-zinc-950 min-h-screen">
+          <Header />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
