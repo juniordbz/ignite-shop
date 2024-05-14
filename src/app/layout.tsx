@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Jersey_25 } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
+import { Header } from "@/components/header";
 
 const jersey = Jersey_25({
   weight: ["400"],
