@@ -1,4 +1,5 @@
 import { Product } from "@/components/product";
+
 import {
   Carousel,
   CarouselContent,
@@ -13,9 +14,10 @@ export default function Home() {
       <Carousel>
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <Product />
-            </CarouselItem>
+            <CarouselItem
+              key={index}
+              className="md:basis-1/2 lg:basis-1/3"
+            ></CarouselItem>
           ))}
         </CarouselContent>
         <CarouselPrevious className="left-0" variant={"ghost"} />
